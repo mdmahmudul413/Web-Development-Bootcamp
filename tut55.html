@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for, while, forEach, Do While Loops</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is about loops</h1>
+    </div>
+    <script>
+        // for-loop in js 
+        console.log("This is practice about javascript loops.");
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        let arr = ["Peter", "Ben", "Atkinson", "Robart", "Trudo"];
+
+        for (i = 0; i < 5; i++) {
+            console.log("Hello " + arr[i]);
+        }
+
+        // forEach loop
+        arr.forEach(function(element) {
+            console.log("Hello " + element + " to modern javascript.");
+        });
+
+        // forOf loop
+        for (element of arr) {
+            console.log("Hello " + element + " to modern javascript again.");
+        }
+
+        // forIn loop
+        let employee = {
+            name: "Harry",
+            age: 25,
+            Channel: "CWH"
+        };
+
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // while loop in js
+        let a = 0;
+        while (a < 4) {
+            console.log(`i is less then 4 and a is ${a}`);
+            a++;
+        }
+
+        // do while loop
+        let s = 24;
+        do {
+            console.log(`${s} is less then 4 and its wrong and we are in do while loop`);
+        } while (s < 4);
+    </script>
+</body>
+
+</html>

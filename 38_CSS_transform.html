@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            height: 80vh;
+        }
+        
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            margin: 10px;
+        }
+        
+        #box1:hover {
+            transform: rotate(45deg);
+            /* transform: skew(45deg); */
+            /* transform: scale(2); */
+            /* transform: translateY(122px); */
+            /* transform: translate(122px,300px); */
+        }
+        
+        #box2:hover {
+            /* transform: rotate(45deg); */
+            transform: skew(20deg);
+            /* transform: scale(2); */
+            /* transform: translateY(122px); */
+            /* transform: translate(122px,300px); */
+        }
+        
+        #box3:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(45deg); */
+            transform: scale(1.3);
+            /* transform: translateY(122px); */
+            /* transform: translate(122px,300px); */
+        }
+        
+        #box4:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(45deg); */
+            /* transform: scale(2); */
+            /* transform: translateY(122px); */
+            transform: translate(50px, 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            This is a box
+        </div>
+        <div class="box" id="box2">
+            This is a box
+        </div>
+        <div class="box" id="box3">
+            This is a box
+        </div>
+        <div class="box" id="box4">
+            This is a box
+        </div>
+
+    </div>
+</body>
+
+</html>

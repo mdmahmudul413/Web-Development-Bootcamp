@@ -1,0 +1,73 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url('/static/bg.jpg')no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
+nav {
+    background-color: black;
+    padding: 12px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 2px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: 77px auto;
+    max-width: 70%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 3px;
+    margin: 15px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+.btn {
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 61%;
+    outline: none;
+}

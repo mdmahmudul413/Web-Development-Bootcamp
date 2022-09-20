@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        /* div>p will select clids p of parent div */
+        
+        div>p {
+            color: red;
+            font-weight: bold;
+            background-color: wheat;
+        }
+        /* div+p will select the next sibling of p after div */
+        /* div+p {
+            color: red;
+            font-weight: bold;
+            background-color: rgb(179, 245, 185);
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is inside list paragraph</p>
+                </li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating The DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>This is another container.</h1>
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        console.log(nav.innerHTML);
+
+        // to change the innerHTML
+        // nav.innerHTML = "<li>LOL</li>"
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        console.log(container[1]);
+
+        let sel = document.querySelector('.container');
+        console.log("Selector returns: ", sel);
+
+        let sel1 = document.querySelector('li');
+        console.log("Selector returns: ", sel1);
+
+        let sel2 = document.querySelectorAll('li');
+        console.log("Selector returns: ", sel2);
+
+        sel2[0].innerHTML = "Inserted";
+    </script>
+</body>
+
+</html>

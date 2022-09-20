@@ -1,0 +1,11 @@
+// inserting data to mongoDB
+use harrykart
+
+// single item insertion
+db.items.insertOne({ name: "Samesung 30s", price: "20000", rating: 4.5, qty: 233, sold: "98" })
+
+// to see the objects
+// db.items.find()
+
+// multiple item insertion
+db.items.insertMany([{ name: "Samesung 30s", price: 20000, rating: 4.5, qty: 233, sold: 98 }, { name: "Moto 30s", price: 25500, rating: 2.5, qty: 33, sold: 8 }, { name: "Realme 30s", price: 2400, rating: 5, qty: 2333, sold: 2298, isBig: true }])

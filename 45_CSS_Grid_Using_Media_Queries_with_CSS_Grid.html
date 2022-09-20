@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Using Media Queries with CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'sec sec sec side'
+                'foot foot foot foot';
+        }
+
+        @media only Screen and (max-width: 800px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .container {
+                
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'sec sec sec sec'
+                    'side side side side'
+                    'foot foot foot foot';
+            }
+            aside{
+                display: none;
+            }
+        }
+
+        @media only Screen and (min-width: 800px) and (max-width: 1200px) {
+            body {
+                background-color: cadetblue;
+
+            }
+
+            .container {
+                
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'sec sec sec sec'
+                    'side side side side'
+                    'foot foot foot foot';
+            }
+        }
+
+        @media only Screen and (min-width: 1200px) and (max-width: 1600px) {
+            body {
+                background-color: chartreuse;
+
+            }
+        }
+
+        @media only Screen and (min-width: 1600px) {
+            body {
+                background-color: chocolate;
+
+            }
+        }
+
+        .bdr {
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            padding: 23px;
+        }
+
+        nav {
+            text-align: center;
+            grid-area: nav;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        section {
+            text-align: center;
+            grid-area: sec;
+
+        }
+
+        aside {
+            text-align: center;
+            grid-area: side;
+
+        }
+
+        footer {
+            text-align: center;
+            grid-area: foot;
+            /* font-size: 23px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+              
+        </nav>
+        <section class="bdr">
+            <h1>CSS Grid with media queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde beatae et, rem voluptatem voluptatibus vero, expedita officiis recusandae vitae facere minus doloremque inventore, reiciendis delectus! Eius exercitationem odio commodi tenetur adipisci, similique quod officia velit, saepe beatae sequi neque molestiae ducimus at sunt reiciendis temporibus! Soluta omnis explicabo cumque error incidunt aspernatur vel odit officiis voluptatem nulla doloremque laudantium ab similique labore cupiditate voluptate rerum sequi sapiente architecto, debitis alias dolorum ullam! Sequi magni eveniet vel dolore optio reiciendis excepturi enim amet, tempore adipisci tempora voluptates illo aliquid, debitis numquam, soluta eligendi dolorum! Dolorem quasi est aut impedit earum, dolore ab praesentium et, laborum incidunt consectetur expedita quaerat, accusamus tempore iste nulla inventore adipisci blanditiis! Ex velit eum quia odit repellendus natus necessitatibus quaerat? Repellat, dolorum qui, vero pariatur voluptates unde ad tempora deserunt quasi at quia nulla quidem numquam cum sed tempore cupiditate, eveniet hic eaque. Ipsum, eveniet!</p>
+        </section>
+        <aside class="bdr">
+            More about us
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright Mohammad Mahmudul 2020
+    </footer>
+
+</body>
+
+</html>

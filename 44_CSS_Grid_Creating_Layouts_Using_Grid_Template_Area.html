@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Creating Layouts Using Grid Template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: .5rem;
+            grid-template-areas: 
+            'nav nav nav nav' 
+            'sec sec sec side' 
+            'foot foot foot foot';
+        }
+        
+        .item {
+            background-color: cadetblue;
+            border: 2px solid black;
+            padding: 15px;
+        }
+        
+        #navbar {
+            text-align: center;
+            grid-area: nav;
+        }
+        
+        #section {
+            text-align: center;
+            grid-area: sec;
+        }
+        
+        #aside {
+            text-align: center;
+            grid-area: side;
+        }
+        
+        #footer {
+            text-align: center;
+            grid-area: foot;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+
+        <div id="section" class="item">
+            <strong>Muhammad Mahmudul Islam</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officiis eligendi quisquam, eveniet ipsa ipsam, modi rerum obcaecati, expedita dolores non eos laudantium amet repellendus provident doloribus
+            quos sapiente vel quaerat accusantium repudiandae nihil a temporibus. Nesciunt deserunt eaque nostrum non aspernatur expedita reiciendis placeat facilis at dolor, ut aliquam tempora error sit magni laborum autem ad veritatis in deleniti dignissimos
+            officiis laudantium molestiae. Fuga, exercitationem quod eveniet quaerat assumenda obcaecati perspiciatis harum. Odit cupiditate voluptate, cum hic voluptas deleniti labore quia assumenda numquam totam est inventore dolores illum voluptates
+            cumque quisquam odio, autem quod! Optio nulla hic sed quis odit dignissimos eligendi sunt nesciunt. Veniam, perferendis magni provident est blanditiis facere facilis temporibus! Corporis ea obcaecati quidem provident accusamus. Nisi omnis
+            officia eaque. Quam ipsam itaque perferendis dolorum eos minus maiores suscipit tempore hic, nesciunt autem accusamus non? Aliquam ratione ipsam earum et enim assumenda dolor eaque quod labore iste? Modi numquam ullam fugiat et quaerat reprehenderit
+            consectetur praesentium sit! Sint obcaecati aut necessitatibus consequuntur laboriosam. Accusantium at quos doloremque illum ab adipisci voluptatem, voluptate aliquam fuga veniam aut, officia mollitia. At facilis omnis culpa, ullam doloribus
+            eum beatae obcaecati, harum officiis neque odio labore saepe expedita pariatur debitis unde sequi adipisci dolorem? Neque quas sunt obcaecati? Iste aut molestiae veniam rem, est culpa vitae dolorum ab voluptatibus, nesciunt laboriosam rerum,
+            sapiente tempora ullam nulla officia id non alias odit numquam necessitatibus ipsum? Totam cupiditate accusamus illo aut ad autem debitis veritatis nobis facilis velit expedita vel, atque dolore, sint dicta tempore doloribus animi dolorem
+            aliquid architecto provident aspernatur officia quia porro. Dolore ipsum maiores blanditiis voluptas eius natus excepturi. Adipisci, sit? Voluptates adipisci dolores voluptatem neque officia assumenda voluptatibus voluptate voluptas illo debitis
+            labore animi similique repudiandae sapiente fugit, ipsam eaque autem aperiam ea mollitia obcaecati illum reprehenderit. Illo fugiat quae beatae architecto hic deleniti sit deserunt culpa velit officia magni facilis repudiandae quaerat, dolor
+            perferendis dicta pariatur optio est aperiam officiis? Quis accusantium fugiat nesciunt quo in neque dolorum tempore enim explicabo! Delectus necessitatibus consequuntur, optio cumque incidunt omnis doloremque natus nostrum veniam veritatis
+            perferendis iusto voluptatum accusamus ipsam sunt quae dolores vero, libero ex. Dolor tempora quidem corporis explicabo earum, dolore itaque totam nam. Numquam blanditiis neque nostrum officia explicabo minima velit aliquid natus soluta amet
+            temporibus impedit consequatur ipsam ex culpa ad exercitationem quis iusto, magnam repellendus expedita! Quisquam, repudiandae cum. Qui molestias et soluta!
+        </div>
+
+        <div id="aside" class="item">
+            <b>Zeba Rezoana Mohona</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae id iure, sunt odit unde excepturi rem quam, corporis at modi, eveniet laboriosam ut? Nobis saepe eos optio, reiciendis aperiam amet aliquam facilis
+            nihil numquam molestiae voluptatem autem magnam, aspernatur placeat, ratione dolores laborum? Odit animi nihil ea id quos dolor quae perferendis quod laboriosam molestias autem temporibus tempora, non perspiciatis praesentium error eligendi
+            eius eveniet! Voluptatem minima inventore beatae assumenda itaque ea temporibus autem voluptates consectetur, cupiditate cumque tempora odit accusantium, officia, quod omnis praesentium ipsa exercitationem esse? Possimus, porro aperiam. Atque
+            a nemo accusamus adipisci molestiae ipsum aspernatur voluptate numquam suscipit optio dolorem laudantium, placeat sed, sequi maiores omnis aliquam nesciunt dolore reiciendis illo? Et incidunt laborum dolorem, cupiditate eos natus laudantium,
+            ea facilis dolorum veniam hic repellendus, dicta nulla! Tempore eos vitae quos error atque quia cupiditate aliquam dolores, asperiores quam nobis iusto mollitia ea minus quasi labore perspiciatis eum necessitatibus provident animi eveniet
+            consectetur similique placeat voluptas? Totam officiis non cupiditate maxime dolores cumque, iste at? In consectetur ipsa ad amet vero fuga aliquam quasi eum labore, minima praesentium adipisci animi est rerum ducimus beatae saepe eaque omnis
+            facilis. Ratione magnam libero architecto quis rerum nam aspernatur laboriosam blanditiis corrupti at. Sapiente dicta, molestiae, laborum, pariatur est consequuntur quas praesentium possimus nulla accusamus quae rem. Odio quas possimus culpa
+            mollitia at, animi fugit, nihil eaque consequuntur sequi aliquid quam commodi alias harum dolorem libero placeat omnis. Rerum fugiat reiciendis ut culpa alias, cum vitae, ea consequatur aspernatur saepe officiis neque, error voluptas dolorem
+            nisi magnam iste temporibus? Aut necessitatibus, reprehenderit nulla alias ducimus tempora cum ipsa omnis. Vero quo rem adipisci magnam laborum, nulla rerum sequi, voluptas velit, suscipit autem nesciunt reprehenderit commodi dignissimos earum
+            temporibus dolores tenetur repellendus! Impedit corrupti delectus optio fugit quam, pariatur quaerat?
+        </div>
+        <div id="footer" class="item">
+            <strong>Redoanul Islam Mahadi</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti minima quod illum. Laudantium ad, accusantium quas unde ipsa magni voluptates omnis quis facere libero quae, temporibus possimus
+            odio in quia. Animi corporis eius, voluptates, accusantium ipsum magni nesciunt laboriosam ipsam ullam magnam aliquid pariatur nisi consequatur inventore quibusdam autem fugiat minima quae distinctio minus mollitia reiciendis beatae necessitatibus
+            dolorum. Itaque voluptatibus vitae molestiae. Saepe quisquam quos earum repellendus voluptate eum minus, inventore quod quibusdam ad magni magnam, nisi et ab illum deserunt odio maiores. Quisquam facilis sunt debitis quae iusto molestiae laboriosam
+            iure amet cum, quibusdam, porro odit odio?
+        </div>
+    </div>
+</body>
+
+</html>

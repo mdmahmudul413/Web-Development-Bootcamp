@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(78, 23, 23);
+            color: white;
+        }
+        
+        header::before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "";
+            background: url('download.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .6;
+        }
+        
+        .navigation {
+            display: flex;
+            font-size: 20px;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        li {
+            list-style: none;
+            padding: 4px 30px;
+        }
+        
+        section {
+            justify-content: center;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 270px;
+            align-items: center;
+        }
+        
+        section::before {
+            content: "This is a content";
+        }
+        
+        section::after {
+            content: "This is a content";
+        }
+        
+        h1 {
+            font-size: 4rem;
+        }
+        
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Wellcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero veritatis tempora iste deserunt tenetur minus enim voluptatum suscipit labore magnam voluptas, cum soluta ratione ullam magni expedita molestias illum? Ex magnam dicta
+            est!
+        </p>
+    </section>
+</body>
+
+</html>

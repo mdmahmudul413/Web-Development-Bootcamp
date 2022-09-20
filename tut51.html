@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        // var string1 = "This is a string";
+        var string1 = "This is a first string2";
+        let str = "This is first let";
+        console.log(str);
+        console.log(string1);
+
+        {
+            var string1 = "This is a second string2";
+            let str = "This is second let";
+            console.log(str);
+            console.log(string1);
+
+
+        }
+        const a = 24;
+        console.log(a);
+        // a = 25;
+        // console.log(a);
+        let age = 17;
+        if (age > 18) {
+            console.log("You can drink water.");
+        } else {
+            console.log("You can drink tea.");
+        }
+
+        const cups = 25;
+        switch (cups) {
+            case 5:
+                console.log("The value is 5");
+                break;
+            case 10:
+                console.log("The value is 10");
+                break;
+            case 15:
+                console.log("The value is 15");
+                break;
+            case 20:
+                console.log("The value is 20");
+                break;
+            case 25:
+                console.log("The value is 25");
+                break;
+            case 30:
+                console.log("The value is 30");
+                break;
+
+            default:
+                console.log('The value of cups is none of 5,10,15,20,25,30');
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeOut</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        #time {
+            position: relative;
+            top: 270px;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            color: royalblue;
+            font-size: 60px;
+            background-color: yellowgreen;
+            padding: 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="time"></span>
+    </div>
+
+    <script>
+        console.log('This is javascript');
+        // setTimeout--> allow us to run the function once after the interval of time
+        // clearTimeout--> allow us to run the function repeatedly after the interval of time
+
+
+        // With no argument
+        // function greet() {
+        //     console.log("Wellcome Honey!");
+        // }
+        // setTimeout(greet, 4000);
+
+
+        // Single argument
+        // function greet(name = 'Mahmud') {
+        //     console.log("Wellcome Honey! " + name);
+        // }
+        // setTimeout(greet, 4000, 'Harry');
+
+
+        // multiple argument
+        function greet(name, byeText) {
+            console.log("Wellcome Honey! " + name + ". " + byeText);
+        }
+        // let timeout = setTimeout(greet, 4000, 'Harry', 'Take care');
+
+        // console.log(timeout);
+        // clearTimeout(timeout);
+
+        // let interval = setInterval(greet, 1000, 'Harry', 'Take care');
+        // console.log(interval);
+        // clearInterval(interval);
+
+        function displayTime() {
+            let time = Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

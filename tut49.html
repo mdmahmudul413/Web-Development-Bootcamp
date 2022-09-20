@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and strings method in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h3 id="Element"></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio laborum quisquam esse debitis, facilis ratione tempora recusandae consequatur facere magni explicabo! Voluptas error vel nisi enim possimus deserunt, aut rerum dolore in velit?</p>
+    </div>
+    <script>
+        var string = "th'is";
+        var name = "mahmudul"
+        var message = "mahmudul is a coder"
+
+        // console.log(string + name + message);
+        var name2 = "mahmud";
+        var message2 = "is a coder";
+        var temp = `${name2} ${message2}`;
+        console.log(temp);
+
+        var temp2 = `I am mokles. hello \n 'guys'.... "Whats up...."`;
+        console.log(temp2);
+        console.log(name.length);
+
+        var v = "my name is K\than. i am 34\\n years old\bs....";
+        console.log(v);
+
+        var b = new String("this");
+        console.log(b);
+        document.getElementById('Element').innerHTML = '<h3>This is another header.</h3>';
+    </script>
+</body>
+
+</html>

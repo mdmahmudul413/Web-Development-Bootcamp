@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a simple HTML</h1>
+    </div>
+    <script>
+        let employee = {
+            name: "Mahmudul",
+            age: 25,
+            "Designation 01": "Web Developer"
+        }
+        console.log(employee);
+
+        let name = [41, 32, 73, "Moon", undefined];
+        let names = new Array(1, 2, 3, "Moon", undefined);
+        console.log(name);
+        console.log(name[3]);
+        console.log(names);
+        console.log(names[3]);
+        console.log(names.length);
+        console.log(name.sort());
+        names.push(true);
+        console.log(names);
+        console.log(employee.name);
+        console.log(employee['name']);
+        let arr2 = new Array(25);
+        console.log(arr2);
+    </script>
+</body>
+
+</html>
