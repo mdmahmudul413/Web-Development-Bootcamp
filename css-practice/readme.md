@@ -22,6 +22,46 @@
     background: yellow;
     background-color: yellow;
     
+    
+    background-image: url('...');
+    
+    ❑ Background shorthand,
+       background-image: url('...') no-repeat center center/cover;
+    
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    
+    background-size: 200px;
+    
+    background-position:  250px 130px;
+    
+    background-position:  top;
+    background-position:  left;
+    background-position:  bottom;
+    background-position:  center;
+    
+    background-position:  top center;
+    background-position:  bottom left;
+    
+    
+**❑ Filter the image color**
+
+    filter: invert(0-100)%;
+    
+**❑ Opacity**
+
+    opacity: (.1-1); 
+       
+**❑ Height, Width**
+
+    height: (0-100)%;
+    width: (0-100)%;
+    
+    height: 100px;
+    width: 600px;
+    
+
 **❑ Border**
     
     border: none;
