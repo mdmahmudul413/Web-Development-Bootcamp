@@ -96,6 +96,12 @@
     margin-bottom: 2px;
     margin-right: 2px;
     
+    ❑ Margin Shorthand
+       margin: top left bottom right
+        
+       Example:
+       margin: 2px 5px 2px 5px
+    
  **❑ Padding**
 
     padding: 2px;
@@ -105,20 +111,12 @@
     padding-bottom: 2px;
     padding-right: 2px;
     
-**❑ Margin Shorthand**
-
-    margin: top left bottom right
-    
-    Example:
-    margin: 2px 5px 2px 5px
-    
-**❑ Padding Shorthand**
-    
-    padding: top left bottom right
-        
-    Example:
-    padding: 2px 5px 2px 5px
-    
+    ❑ Padding Shorthand
+       padding: top left bottom right
+            
+       Example:
+       padding: 2px 5px 2px 5px
+       
 **❑ Web Safe Fonts**
 
     font-family: 'Ubuntu', sans-serif;
