@@ -59,7 +59,10 @@
     width: (0-100)%;
     
     height: 100px;
-    width: 600px;
+    width: 600px
+    
+    height: 100vh;(Viewport height)
+    width: 100vw;(Viewport width)
     
 
 **❑ Border**
@@ -132,6 +135,8 @@
 **❑ Important Font Property**
 
     font-size: 30px;
+    font-size: 3rem;
+    font-size: 30em;
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
@@ -206,7 +211,8 @@
     
 **❑ Flexbox**
     
-    display: flex;
+    ❑ To make an element flexbox
+       display: flex;
     
     flex-direction: row;(default)
     flex-direction: column;
@@ -223,11 +229,42 @@
        flex-flow: flex-direction flex-wrap
        flex-flow: row wrap;
     
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-evenly;
-    justify-content: space-around;
+    ❑ Flexbox Alignment
     
+       justify-content: center;
+       justify-content: space-between;
+       justify-content: space-evenly;
+       justify-content: space-around;
+    
+       align-items: flex-start;(default)
+       align-items: center;
+       align-items: flex-end; 
+       align-items: stretch; 
+       
+       align-self:flex-start;
+       align-self:flex-end;
+       align-self:flex-center;     
+     
+     ❑ Higher the order, its shows last in the container.
+        order: 1;
+        
+     ❑ Resizing width according to window size when flex-direction is row.
+        flex-grow: 2;
+        
+     ❑ Resizing width according to window size when flex-direction is column.
+        flex-shrink: 10;
+        
+     ❑ If flex-direction is row then, it will control width and if flex-direction
+        is column then, it will control height.
+        flex-basis: 10px;
+        
+     ❑ Flexbox Shorthand
+         
+       Example:
+       flex-flow: flex-grow flex-shrink flex-basis
+       flex-flow: row wrap;
+     
+ 
 **❑ Visibility**
 
     visibility: hidden;
