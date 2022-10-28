@@ -7,15 +7,15 @@
 
 **❑ Selector**
 
-    ➣ Universal:                    *{...}
-    ➣ Id:                           #id-name{...}
-    ➣ Class:                        .class-name{...}
-    ➣ Element:                      a{...}, p{...}, div{...}, ul li{...}, div ul li a{...}, etc.
-    ➣ Inside Eliment:               div>p{...}
-    ➣ Next Sibling:                 div+p{...}
-    ➣ Attribute type='text':        input[type='text']{...}
-    ➣ Attribute target="_blank":    a[target="_blank"]{...}
-    ➣ N'th Child:    li:nth-child(n){...}
+    ➣ Universal:                        *{...}
+    ➣ Id:                               #id-name{...}
+    ➣ Class:                            .class-name{...}
+    ➣ Element:                          a{...}, p{...}, div{...}, ul li{...}, div ul li a{...}, etc.
+    ➣ Inside Eliment:                   div>p{...}
+    ➣ Next Sibling:                     div+p{...}
+    ➣ Attribute type='text':            input[type='text']{...}
+    ➣ Attribute target="_blank":        a[target="_blank"]{...}
+    ➣ N'th Child:                       li:nth-child(n){...}
     
     ❑ Note, 
     1. div+p will select the next sibling of p after div
