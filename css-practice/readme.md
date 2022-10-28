@@ -5,10 +5,24 @@
         b. href = hyper reference
         c. css/style.css = css file location
 
-**❑ Universal Selector**
+**❑ Selector**
+
+    ➣ Universal:                    *{...}
+    ➣ Id:                           #id-name{...}
+    ➣ Class:                        .class-name{...}
+    ➣ Element:                      a{...}, p{...}, div{...}, ul li{...}, div ul li a{...}, etc.
+    ➣ Inside Eliment:               div>p{...}
+    ➣ Next Sibling:                 div+p{...}
+    ➣ Attribute type='text':        input[type='text']{...}
+    ➣ Attribute target="_blank":    a[target="_blank"]{...}
+    ➣ N'th Child:    li:nth-child(n){...}
     
-    *{...}
-        
+    ❑ Note, 
+    1. div+p will select the next sibling of p after div
+    2. Attribute type='text' will select the element which attribute type="text"
+    3. Attribute target="_blank" will select the element which attribute target="_blank"
+    4. li:nth-child(n){...} will select the nth children inside li
+           
 **❑ Importancy**
         
     text-align: center !important;
