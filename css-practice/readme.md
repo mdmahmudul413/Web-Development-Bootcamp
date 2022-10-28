@@ -16,6 +16,8 @@
     ➣ Attribute type='text':            input[type='text']{...}
     ➣ Attribute target="_blank":        a[target="_blank"]{...}
     ➣ N'th Child:                       li:nth-child(n){...}
+    ➣ Before:                           section::before{...}
+    ➣ After:                            section::after {...}
     
     ❑ Note, 
     1. div+p will select the next sibling of p after div
@@ -345,6 +347,45 @@
             background-color: green;
         }
      }        
+        
+**❑ Box shadow**
+
+    box-shadow: 10px 10px gray
+    box-shadow: -10px -10px gray;(Oposite direction shadow) 
+    box-shadow: 10px 10px 5px gray;(Blur value = 5px) 
+    box-shadow: 10px 10px 5px 5px gray;(Spread value = 5px) 
+    box-shadow: inset -10px -10px gray;(Inside box-shadow) 
+    box-shadow: 10px 10px gray, 12px 12px red;(More then one shadow)  
+    
+    ❑ Note,
+       box-shadow: offset-x offset-y blur-radius spread-radius color; 
+
+
+**❑ Text shadow**
+
+    text-shadow: 2px 2px white; 
+    
+**❑ Variables & Custom Properties**
+
+    :root {
+        --box-color: royalblue;
+        --shade: gray;
+        --background: rgb(185, 17, 185);
+        --maxw: 350px;
+    }
+            
+    .box {
+        --example: rgb(250, 86, 86);
+        border: 5px solid var(--example);
+        background-color: var(--box-color);
+        box-shadow: 9px 9px var(--shade);
+    }
+            
+    .container {
+        background-color: var(--background);
+        width: var(--maxw);
+        border: 5px solid var(--shade);
+    }
              
              
     
