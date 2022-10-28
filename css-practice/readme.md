@@ -302,6 +302,37 @@
         1. Works with position: relative, sticky, absolute,fixed
         2. Will not works with position: static
         3. The higher value of z-index will make the elements top of other elements.
+        
+**❑ Media-query**
+
+     @media only Screen and (max-width: 300px) {
+         #box-1 {
+            display: block;
+         }
+     }
+             
+     @media only Screen and (min-width: 300px) and (max-width: 500px) {
+          #box-2 {
+              display: block;
+              background-color: yellowgreen;
+          }
+     }
+             
+     @media only Screen and (min-width: 500px) and (max-width: 800px) {
+           #box-3 {
+               display: block;
+               background-color: purple;
+           }
+     }
+     
+     @media only Screen and (min-width: 800px) {
+        #box-4 {
+            display: block;
+            background-color: green;
+        }
+     }        
+             
+             
     
     
     
