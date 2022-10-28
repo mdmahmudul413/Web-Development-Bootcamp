@@ -20,10 +20,10 @@
     ➣ After:                            section::after {...}
     
     ❑ Note, 
-    1. div+p will select the next sibling of p after div
-    2. Attribute type='text' will select the element which attribute type="text"
-    3. Attribute target="_blank" will select the element which attribute target="_blank"
-    4. li:nth-child(n){...} will select the nth children inside li
+        1. div+p will select the next sibling of p after div
+        2. Attribute type='text' will select the element which attribute type="text"
+        3. Attribute target="_blank" will select the element which attribute target="_blank"
+        4. li:nth-child(n){...} will select the n'th children inside li
            
 **❑ Importancy**
         
