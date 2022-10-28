@@ -25,7 +25,7 @@
     
     background-image: url('...');
     
-    ❑ Background shorthand,
+    ❑ Background image shorthand,
        background-image: url('...') no-repeat center center/cover;
     
     background-repeat: no-repeat;
@@ -180,6 +180,93 @@
     
     Adjust Width,
     width: (0-100)%
+    
+**❑ Hover**
+
+    a:hover{...}
+    
+**❑ Active**
+
+    a:active{...}
+    
+**❑ visited**
+
+    a:visited{...}
+    
+**❑ Display Property**
+    
+    display: inline;
+    display: block;
+    display: inline-block;
+    display: grid;
+    display: flex;
+    
+    display: none;
+    ❑ Note: "display: none;" will hide element and it's empty space.
+    
+**❑ Flexbox**
+    
+    display: flex;
+    
+    flex-direction: row;(default)
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    
+    flex-wrap: nowrap;(default)
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    
+    ❑ Flexbox Shorthand
+    
+       Example:
+       flex-flow: flex-direction flex-wrap
+       flex-flow: row wrap;
+    
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    
+**❑ Visibility**
+
+    visibility: hidden;
+    
+    ❑ Note: "visibility: hidden;" will hide element but show its empty space. 
+        
+**❑ Position Property**
+
+     position: static;(default)
+     position: relative;
+     position: absolute;
+     position: fixed;
+     position: sticky;
+     
+     top: 40px;
+     left: 34px;
+     bottom: 34px;
+     right: 40px;
+        
+**❑ Cursor**
+
+     cursor: pointer;
+     
+     ❑ Note: "cursor: pointer;" will make the pointer into hand.
+        
+**❑ Scroll**
+
+     scroll-behavior: smooth;
+        
+**❑ z-index**
+
+     z-index: 55;
+     
+     ❑ Note,
+        1. Works with position: relative, sticky, absolute,fixed
+        2. Will not works with position: static
+        3. The higher value of z-index will make the elements top of other elements.
+    
+    
     
 
     
