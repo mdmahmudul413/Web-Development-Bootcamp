@@ -386,6 +386,200 @@
         width: var(--maxw);
         border: 5px solid var(--shade);
     }
+    
+**❑ Animation & Keyframes**
+
+    position: relative;
+    
+    animation-name: mahmud; 
+       
+    animation-duration: 3s;
+    animation-duration: infinite;
+    
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
+    
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+    
+    animation-fill-mode: forwards;
+    animation-fill-mode: alternative;
+    animation-fill-mode: backward;
+    
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    
+    ❑ Animation short-hand
+       animation: animation-name animation-duration animation-timing-funtion animation-delay animation-iteration-count animation-fill-mode;
+       
+    ❑ Example
+       animation: mahmud .7s ease-in-out 2s 4 backwards;
+    z-index: 10;
+    
+    ❑ Keyframes 
+       
+       Example: 1
+       @keyframes mahmud {
+          0% {
+              top: 0px;
+              left: 0px;
+          }
+          25% {
+              top: 250px;
+              left: 0px;
+          }
+          50% {
+              top: 250px;
+              left: 250px;
+          }
+          75% {
+              top: 0px;
+              left: 250px;
+          }
+          100% {
+              top: 0px;
+              left: 0px;
+          }
+      }
+      
+      Example: 2
+      @keyframes mahmud {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 1400px;
+        }
+      }
+      
+**❑ Transition Property**
+
+    transition-property: all; 
+    transition-property: background-color; 
+    
+    transition-duration: 1s; 
+    
+    transition-timing-function: ease-out; 
+    
+    transition-delay: 2s; 
+    
+    ❑ Transition shorthand
+       transition: transition-property transition-duration transition-timing-function transition-delay 
+       
+     ❑ Example 
+        transition: all 1s ease-in-out 0s;
+        
+**❑ Transform Property**
+    
+    .box {
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+    
+    #box1:hover {
+        transform: rotate(45deg);
+    }
+            
+    #box2:hover {
+        transform: skew(20deg);
+    }
+            
+    #box3:hover {
+        transform: scale(1.3);
+    }
+            
+    #box4:hover {
+        transform: translateY(122px);
+    }
+    
+    #box5:hover {
+        transform: translate(50px, 50px);
+    }
+    
+    
+**❑ Css Grid (Column)**
+
+    display: grid;
+    
+    grid-template-columns: 300px auto 100px
+    grid-template-columns: 300px 120px 100px
+    grid-template-columns: 1fr 4fr 1fr
+    grid-template-columns: repeat(3, auto);
+    
+    grid-gap: 6px;
+
+**❑ Css Grid (Row)**
+
+    display: grid;
+    
+    grid-gap: 1rem;
+    
+    grid-template-rows: 1fr 2fr 3fr;
+    
+    grid-auto-rows: 5fr;
+    
+    grid-template-columns: 1fr 3fr 2fr;
+    
+**❑ Grid Spanning Multiple Rows & Columns**
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    ❑ Shorthand
+       grid-column: 1/span 3;
+    
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    ❑ Shorthand
+       grid-row: 1/span 3;
+    
+**❑ Grid Autofit & Minmax**
+    
+    justify-content: center;
+    
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));    
+    
+**❑ CSS Grid Creating Layout**
+    
+    .container {
+        display: grid;
+        
+        grid-gap: .5rem;
+        
+        grid-template-areas: 
+        'nav nav nav nav' 
+        'sec sec sec side' 
+        'foot foot foot foot';
+    }
+                   
+    #navbar {
+        text-align: center;
+        grid-area: nav;
+    }
+            
+    #section {
+        text-align: center;
+        grid-area: sec;
+    }
+            
+    #aside {
+        text-align: center;
+        grid-area: side;
+    }
+            
+    #footer {
+        text-align: center;
+        grid-area: foot;
+    }
+    
+    ❑ Note: 
+       'nav nav nav nav' = 1fr 1fr 1fr 1fr
+
+    
              
              
     
