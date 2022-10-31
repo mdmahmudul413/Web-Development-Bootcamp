@@ -71,6 +71,28 @@
 
     opacity: (.1-1); 
        
+**❑ CSS Units**
+
+     ❑ Absolute Lengths
+     
+        cm	 =   centimeters
+        mm	 =   millimeters
+        in	 =   inches (1in = 96px = 2.54cm)
+        px   =   pixels (1px = 1/96th of 1in)
+        pt	 =   points (1pt = 1/72 of 1in)
+        pc	 =   picas (1pc = 12 pt) 
+        
+     ❑ Relative Lengths
+        em    =    Relative to the font-size of the element (2em means 2 times the size of the current font)
+        ex    =    Relative to the x-height of the current font (rarely used)	
+        ch    =    Relative to the width of the "0" (zero)	
+        rem   =    Relative to font-size of the root element	
+        vw    =    Relative to 1% of the width of the viewport*	
+        vh    =    Relative to 1% of the height of the viewport*	
+        vmin  =    Relative to 1% of viewport's* smaller dimension	
+        vmax  =    Relative to 1% of viewport's* larger dimension	
+        %     =    Relative to the parent element
+         
 **❑ Height, Width**
 
     height: (0-100)%;
@@ -298,25 +320,28 @@
        flex-flow: row wrap;
     
     ❑ Flexbox Alignment
-    
-       justify-content: center;
-       justify-content: space-between;
-       justify-content: space-evenly;
-       justify-content: space-around;
-    
-       align-items: flex-start;(default)
-       align-items: center;
-       align-items: flex-end; 
-       align-items: stretch; 
+        
+        ➣ Note: "justify-content" align elements in the x-direction.
+           justify-content: center;
+           justify-content: space-between;
+           justify-content: space-evenly;
+           justify-content: space-around;
+           
+       ➣ Note: "align-items" align elements in the y-direction.
+          align-items: flex-start;(default)
+          align-items: center;
+          align-items: flex-end; 
+          align-items: stretch; 
        
-       align-self:flex-start;
-       align-self:flex-end;
-       align-self:flex-center;     
+       ➣ Note: "align-self" property align elements individually in the y-direction.
+           align-self:flex-start;
+           align-self:flex-end;
+           align-self:flex-center;     
      
-     ❑ Higher the order, its shows last in the container.
+     ❑ Higher the order, its shows the element last in the container.
         order: 1;
         
-     ❑ Resizing width according to window size when flex-direction is row.
+     ❑ Resizing the element width according to window size when flex-direction is row.
         flex-grow: 2;
         
      ❑ Resizing width according to window size when flex-direction is column.
@@ -327,10 +352,8 @@
         flex-basis: 10px;
         
      ❑ Flexbox Shorthand
-         
-       Example:
-       flex-flow: flex-grow flex-shrink flex-basis
-       flex-flow: row wrap;
+         1. flex-flow: flex-direction flex-wrap;
+         2. flex: flex-grow flex-shrink flex-basis
      
  
 **❑ Visibility**
