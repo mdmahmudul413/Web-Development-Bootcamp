@@ -7,7 +7,7 @@
 
 **❑ Selector**
 
-    ➣ Universal:                        *{...}
+    ➣ Global:                        *{...}
     ➣ Id:                               #id-name{...}
     ➣ Class:                            .class-name{...}
     ➣ Element:                          a{...}, p{...}, div{...}, ul li{...}, div ul li a{...}, etc.
@@ -22,8 +22,9 @@
     ❑ Note, 
         1. div+p will select the next sibling of p after div
         2. Attribute type='text' will select the element which attribute type="text"
-        3. Attribute target="_blank" will select the element which attribute target="_blank"
-        4. li:nth-child(n){...} will select the n'th children inside li
+        3. div>p will select clids p of parent div
+        4. Attribute target="_blank" will select the element which attribute target="_blank"
+        5. li:nth-child(n){...} will select the n'th children inside li
            
 **❑ Importancy**
         
@@ -436,21 +437,21 @@
          }
      }
              
-     @media only Screen and (min-width: 300px) and (max-width: 500px) {
+     @media only Screen and (min-width: 301px) and (max-width: 500px) {
           #box-2 {
               display: block;
               background-color: yellowgreen;
           }
      }
              
-     @media only Screen and (min-width: 500px) and (max-width: 800px) {
+     @media only Screen and (min-width: 501px) and (max-width: 800px) {
            #box-3 {
                display: block;
                background-color: purple;
            }
      }
      
-     @media only Screen and (min-width: 800px) {
+     @media only Screen and (min-width: 801px) {
         #box-4 {
             display: block;
             background-color: green;
