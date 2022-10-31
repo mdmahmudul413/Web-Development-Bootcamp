@@ -32,6 +32,8 @@
 **❑ Text Color**
     
     color: green;
+    color: rgb(100, 0, 0);
+    color: rgba(100, 0, 0, .1);
     
 **❑ Background**
     
@@ -116,10 +118,15 @@
     margin-right: 2px;
     
     ❑ Margin Shorthand
-       margin: top left bottom right
+           
+        margin: (top-bottom) (left-right)
+        ❑ Example: margin: 2px 6px;
         
-       Example:
-       margin: 2px 5px 2px 5px
+        margin: top (left-right) bottom
+        ❑ Example: margin: 2px 5px 2px;
+           
+        margin: top right bottom left
+        ❑ Example: margin: 2px 5px 2px 5px;
     
  **❑ Padding**
 
@@ -131,10 +138,15 @@
     padding-right: 2px;
     
     ❑ Padding Shorthand
-       padding: top left bottom right
-            
-       Example:
-       padding: 2px 5px 2px 5px
+       
+       padding: (top-bottom) (left-right)
+       ❑ Example: padding: 2px 6px;
+       
+       padding: top (left-right) bottom
+       ❑ Example: padding: 2px 5px 2px;
+       
+       padding: top right bottom left
+       ❑ Example: padding: 2px 5px 2px 5px;
        
 **❑ Web Safe Fonts**
 
@@ -147,6 +159,11 @@
     
     2. Use font-family in the stylesheet
        font-family: 'Ubuntu', sans-serif;
+       
+    ❑ Font Websites,
+       1. https://fonts.google.com/
+       2. https://fontawesome.com/
+       
        
 **❑ Important Font Property**
 
@@ -177,6 +194,8 @@
 **❑ Box Model**
 
     box-sizing: border-box;
+    
+    ❑ Note: "box-sizing: border-box;" removes the default border & padding from div.
 
 **❑ Text Alignment**
 
@@ -186,34 +205,57 @@
     text-align: justify;
 
 **❑ Alignment (Float)**
-
+   
     float: left;
     float: right;
+    
+    ❑ Important Note,
+        1. When we use float, the child elements start to float from the parent element. 
+           It occurs the overflow problem.
+        2. To terminate the overflow use "overflow: auto/hidden;" to the parent element. 
+        3. To use float property, we have to set it's width.
+            width: (0-100)%
     
     clear: left;
     clear: right;
     
+    ❑ Note,
+        1. "clear: left;" means float left elements will not overflow.
+        2. "clear: right;" means float right elements will not overflow.
+        3. "clear" property is for those elements who does not belong to "float" property. 
+           This property is only use for ignoring the overflow of float elements.
+           
+    
     ❑ To make free from both sides,
        clear: both;
-    
-    overflow: auto;
-    overflow: hidden;
-    
-    Adjust Width,
-    width: (0-100)%
-    
-**❑ Hover**
 
-    a:hover{...}
     
-**❑ Active**
+**❑ CSS Pseudo Class**
 
-    a:active{...}
+    selector:pseudo-class {
+      property: value;
+    }
     
-**❑ visited**
+    ❑ Mouse over link
+       a:hover{
+          color: #00FF00;
+       }
+       
+    ❑ Selected link
+       a:active{
+          color: #00FF00;
+       }
+       
+    ❑ Visited link
+        a:visited{
+           color: #00FF00;
+        }
+        
+    ❑ unvisited link 
+        a:link{
+            color: #00FF00;
+        }
 
-    a:visited{...}
-    
 **❑ Display Property**
     
     display: inline;

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: black;
+    overflow: auto;
+}
+.navbar ul{
+    margin: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar li a:hover{
+    color: #eeeeee;
+}
+.navbar div{
+    float: right;
+    padding: 6px 40px;
+}
+.navbar div input{
+    border-radius: 12px;
+    padding: 1px 14px;
+    outline: none;
+}
