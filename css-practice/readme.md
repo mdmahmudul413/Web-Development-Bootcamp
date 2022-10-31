@@ -347,6 +347,10 @@
         are not affected by the top, bottom, left, and right properties.
      
      position: relative;
+     top: 40px;
+     left: 34px;
+     bottom: 34px;
+     right: 40px;
      
      ❑ Note: An element with position: relative; is positioned relative to its normal position.
         Setting the top, right, bottom, and left properties of a relatively-positioned element
