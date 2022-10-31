@@ -263,9 +263,19 @@
     display: inline-block;
     display: grid;
     display: flex;
-    
     display: none;
-    ❑ Note: "display: none;" will hide element and it's empty space.
+    
+    ❑ Note,
+        1. "display: none;" will hide element and it's empty space.
+    
+        2. Compared to display: inline, the major difference is that display: inline-block 
+           allows to set a width and height on the element.
+    
+        3. Also, with display: inline-block, the top and bottom margins/paddings are respected, 
+           but with display: inline they are not.
+    
+    `   4. Compared to display: block, the major difference is that display: inline-block
+           does not add a line-break after the element, so the element can sit next to other elements.
     
 **❑ Flexbox**
     
@@ -332,15 +342,45 @@
 **❑ Position Property**
 
      position: static;(default)
-     position: relative;
-     position: absolute;
-     position: fixed;
-     position: sticky;
      
+     ❑ Note: HTML elements are positioned static by default. Static positioned elements 
+        are not affected by the top, bottom, left, and right properties.
+     
+     position: relative;
+     
+     ❑ Note: An element with position: relative; is positioned relative to its normal position.
+        Setting the top, right, bottom, and left properties of a relatively-positioned element
+        will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+     
+     position: fixed;
      top: 40px;
      left: 34px;
      bottom: 34px;
      right: 40px;
+     
+     ❑ Note: An element with position: fixed; is positioned relative to the viewport, which
+        means it always stays in the same place even if the page is scrolled. The top, right, bottom, 
+        and left properties are used to position the element.
+        
+     position: absolute;
+     top: 40px;
+     left: 34px;
+     bottom: 34px;
+     right: 40px;
+     
+     ❑ Note: An element with position: absolute; is positioned relative to the nearest positioned
+        ancestor (instead of positioned relative to the viewport, like fixed). However; if
+        an absolute positioned element has no positioned ancestors, it uses the document body, 
+        and moves along with page scrolling.
+     
+     position: sticky;
+     top: 40px;
+     
+     ❑ Note: An element with position: sticky; is positioned based on the user's scroll
+      position. A sticky element toggles between relative and fixed, depending on the scroll position. 
+      It is positioned relative until a given offset position is met in the viewport - then it
+      "sticks" in place(like position:fixed).
+     
         
 **❑ Cursor**
 
