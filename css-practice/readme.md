@@ -7,7 +7,7 @@
 
 **❑ Selector**
 
-    ➣ Global:                        *{...}
+    ➣ Global:                           *{...}
     ➣ Id:                               #id-name{...}
     ➣ Class:                            .class-name{...}
     ➣ Element:                          a{...}, p{...}, div{...}, ul li{...}, div ul li a{...}, etc.
@@ -45,7 +45,7 @@
     background-image: url('...');
     
     ❑ Background image shorthand,
-       background-image: url('...') no-repeat center center/cover;
+       background: url('...') no-repeat center center/cover;
     
     background-repeat: no-repeat;
     background-repeat: repeat-x;
